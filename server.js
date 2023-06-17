@@ -12,7 +12,7 @@ app.use(cors());
 // for getting the data in post request
 app.use(express.urlencoded({ extended: true }));
 
-const PORT = process.env.port;
+const PORT = process.env.PORT || 5000;
 
 const DB_URL = process.env.DB_URL;
 
